@@ -1,0 +1,8 @@
+python -m venv venv
+
+python must be present 
+
+venv\Scripts\activate
+
+deactivate 
+where python

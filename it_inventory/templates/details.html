@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Asset Details</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Asset Details</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Asset Code: {{ asset['Asset Code'] }}</h5>
+                <p class="card-text"><strong>PC:</strong> {{ asset['PC'] }}</p>
+                <p class="card-text"><strong>Serial Number:</strong> {{ asset['S/N'] }}</p>
+                <p class="card-text"><strong>PC Model:</strong> {{ asset['PC Model'] }}</p>
+                <p class="card-text"><strong>Hostname:</strong> {{ asset['Hostname'] }}</p>
+                <p class="card-text"><strong>Processor:</strong> {{ asset['Processor'] }}</p>
+                <p class="card-text"><strong>RAM:</strong> {{ asset['RAM'] }}</p>
+                <p class="card-text"><strong>HDD:</strong> {{ asset['HDD'] }}</p>
+                <p class="card-text"><strong>Operating System:</strong> {{ asset['Operating System'] }}</p>
+                <p class="card-text"><strong>Monitor/Make:</strong> {{ asset['Monitor/Make'] }}</p>
+                <p class="card-text"><strong>Monitor S/N:</strong> {{ asset['Monitor S/N'] }}</p>
+                <p class="card-text"><strong>Domain:</strong> {{ asset['Domain'] }}</p>
+                <p class="card-text"><strong>IP Address:</strong> {{ asset['IP Address'] }}</p>
+                <p class="card-text"><strong>MS Office:</strong> {{ asset['MS Office'] }}</p>
+                <p class="card-text"><strong>User Name:</strong> {{ asset['User Name'] }}</p>
+                <p class="card-text"><strong>Department:</strong> {{ asset['Department'] }}</p>
+                <p class="card-text"><strong>Sub Dept:</strong> {{ asset['Sub Dept'] }}</p>
+                <p class="card-text"><strong>Remarks:</strong> {{ asset['Remarks'] }}</p>
+                <p class="card-text"><strong>Location:</strong> {{ asset['Location'] }}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
